@@ -1,0 +1,40 @@
+# =====================================================
+# .gitignore — NextGenQA Claude Worktree Tutorial
+# =====================================================
+
+# Maven build output
+target/
+*.class
+
+# ── Claude Code Worktrees ──────────────────────────
+# Worktree contents are managed by git internally.
+# Add this so the worktree folders don't show as
+# untracked files in your main repository.
+.claude/worktrees/
+
+# ── IDE Files ─────────────────────────────────────
+.idea/
+*.iml
+.vscode/settings.json
+.vscode/*.log
+*.suo
+*.user
+
+# ── OS Files ──────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Test Reports ──────────────────────────────────
+test-output/
+extent-reports/
+*.html
+!README*.html
+
+# ── Logs ──────────────────────────────────────────
+*.log
+logs/
+
+# ── Environment ───────────────────────────────────
+.env
+.env.local

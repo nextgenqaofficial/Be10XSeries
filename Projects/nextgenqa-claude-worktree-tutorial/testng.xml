@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    =====================================================
+    TestNG Suite Configuration
+    NextGenQA | Claude Code Git Worktree Tutorial
+    =====================================================
+
+    Run all tests:  mvn test
+    Run specific:   mvn test -Dtest=LoginPageTest
+    =====================================================
+-->
+<suite name="NextGenQA - Claude Worktree Tutorial Suite" verbose="1">
+
+    <!-- Login Tests -->
+    <test name="Login Page Tests">
+        <classes>
+            <class name="com.nextgenqa.tests.LoginPageTest"/>
+        </classes>
+    </test>
+
+    <!-- Checkout/Checkbox Tests -->
+    <test name="Checkout Page Tests">
+        <classes>
+            <class name="com.nextgenqa.tests.CheckoutPageTest"/>
+        </classes>
+    </test>
+
+</suite>
