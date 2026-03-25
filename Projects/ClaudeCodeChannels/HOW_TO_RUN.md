@@ -61,7 +61,7 @@ Token looks like:
 ```
 7123456789:AAF_example_token_here
 ```
-BotToken : 8495888859:AAED9bhuzUV13tAdyyf6FaIbyXj-5CHCVrM
+BotToken : YOUR_BOT_TOKEN_HERE
 ---
 
 ## STEP 3 — Install & Configure the Telegram Plugin
