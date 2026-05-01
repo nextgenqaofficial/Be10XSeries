@@ -1,57 +1,67 @@
-# Be10X AI Series — Next Gen QA
+# Be10X AI Series - Next Gen QA
 
-> **10X your productivity with AI-powered workflows for QA Engineers and developers.**
-> Real-world tutorials showing how to use AI tools to solve daily problems faster.
+Practical demo projects for QA engineers and developers learning AI-assisted workflows. This repository is the companion codebase for the Next Gen QA Be10X series and now contains multiple self-contained tutorials under `Projects/`.
 
-## YouTube Channel
+## What Is In This Repo
 
-**Subscribe for new videos every week:**
-[youtube.com/@Next.Gen.QA.Official](https://www.youtube.com/@Next.Gen.QA.Official)
+Each project focuses on a specific AI workflow for QA automation, agent collaboration, or eval-driven development. Most projects are Java + Maven based, with Selenium or Spring Boot depending on the tutorial.
 
----
+## Project Index
 
-## What Is This Series?
+| Folder | Focus | Stack | Start Here |
+|---|---|---|---|
+| `Projects/AgentTeams` | Claude Code agent teams working in parallel on a Selenium project | Java 17, Maven, Selenium, TestNG | `README.md`, `STEPS.md`, `prompts/` |
+| `Projects/ClaudeCodeChannels` | Running Claude Code through Telegram channels while working on Selenium tests | Java 11, Maven, Selenium, TestNG | `README.md`, `HOW_TO_RUN.md` |
+| `Projects/Evals` | Evaluating an AI QA assistant with Promptfoo and a Spring Boot web app | Java 17, Maven, Spring Boot, Promptfoo | `steps.md`, `promptfooconfig.yaml` |
+| `Projects/nextgenqa-boris-workflow` | Boris-style multi-session Claude workflow using separate repo copies | Java 11, Maven, Selenium, TestNG | `instructions.md`, `steps.md`, `CLAUDE.md` |
+| `Projects/nextgenqa-claude-worktree-tutorial` | Claude Code git worktrees for parallel QA automation tasks | Java 11, Maven, Selenium, TestNG | `README.md`, `steps.md`, `scripts/` |
 
-The **Be10X AI Series** is a collection of hands-on video tutorials where we explore practical AI workflows that help QA engineers and developers:
+## Repository Structure
 
-- Automate repetitive tasks with AI
-- Solve real bugs and daily problems faster
-- Use tools like Claude Code, GitHub Copilot, and more
-- Build smarter test automation pipelines
-- Ship higher quality work with 10X less effort
+```text
+Be10XSeries/
+|-- README.md
+`-- Projects/
+    |-- AgentTeams/
+    |-- ClaudeCodeChannels/
+    |-- Evals/
+    |-- nextgenqa-boris-workflow/
+    `-- nextgenqa-claude-worktree-tutorial/
+```
 
-Each folder in this repo is a companion project for a video in the series — with full source code, scripts, and step-by-step instructions so you can follow along.
+## How To Use It
 
----
+1. Clone the repository.
+2. Open the project folder for the tutorial you want to follow.
+3. Read that folder's `README.md`, `steps.md`, or `instructions.md` first.
+4. Run Maven commands from inside that project folder, not from the repo root.
 
-## Series Videos & Projects
-
-| # | Video | Project Folder | Topic |
-|---|-------|---------------|-------|
-| 01 | [Claude Code Git Worktrees for QA Engineers](https://www.youtube.com/@Next.Gen.QA.Official) | [nextgenqa-claude-worktree-tutorial](./nextgenqa-claude-worktree-tutorial/) | Run parallel AI tasks without merge conflicts |
-
-*More videos coming soon — subscribe to get notified!*
-
----
-
-## How to Use This Repo
-
-Each project folder is self-contained with its own README. Clone the repo and navigate to the folder for the video you're following:
+Example:
 
 ```bash
 git clone https://github.com/nextgenqaofficial/Be10XSeries.git
-cd Be10XSeries/<project-folder>
+cd Be10XSeries/Projects/AgentTeams
+mvn test
 ```
 
-Then follow the README inside that folder.
+## Common Requirements
 
----
+Most projects expect:
+
+- Java 11+ or 17+ depending on the folder
+- Maven 3.6+ or newer
+- Google Chrome for Selenium-based demos
+- Claude Code for the Claude-focused workflows
+
+The `Projects/Evals` demo also needs Node.js for Promptfoo and an OpenAI-compatible API key configured in its application properties.
+
+## Notes
+
+- These projects are intentionally independent rather than part of one parent build.
+- Some tutorial folders include presentation assets such as `.pptx`, prompt files, or walkthrough notes used for the related videos.
+- If you are unsure where to begin, start with `Projects/nextgenqa-claude-worktree-tutorial` or `Projects/AgentTeams`.
 
 ## Connect
 
-- **YouTube**: [youtube.com/@Next.Gen.QA.Official](https://www.youtube.com/@Next.Gen.QA.Official)
-- **GitHub**: [github.com/nextgenqaofficial](https://github.com/nextgenqaofficial)
-
----
-
-*Made with passion for the QA community. If these tutorials help you, subscribe and share — it means a lot!*
+- YouTube: [Next Gen QA](https://www.youtube.com/@Next.Gen.QA.Official)
+- GitHub: [nextgenqaofficial](https://github.com/nextgenqaofficial)

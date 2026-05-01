@@ -1,0 +1,9 @@
+target/
+.idea/
+*.iml
+.env
+.promptfoo/
+.npm-cache/
+promptfoo-results.json
+evaluations/
+*.properties

@@ -94,6 +94,7 @@ $RECYCLE.BIN/
 **/.env.*
 **/secrets.*
 **/credentials.*
+**/*.properties
 
 # =============================================
 # Claude Code local config

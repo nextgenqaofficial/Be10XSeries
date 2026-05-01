@@ -25,6 +25,7 @@ release.properties
 .claude/hook.log
 .claude/settings.local.json
 test-output.txt
+*.properties
 
 # Test output
 test-output/
